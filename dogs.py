@@ -8,9 +8,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import cv2
-import math
-from glob import glob
-import os
 import h5py
 from keras.models import Sequential, Model, load_model
 from keras import applications
@@ -19,11 +16,12 @@ from keras.layers import Dropout, Flatten, Dense, Input,GlobalAveragePooling2D
 from keras.utils import vis_utils,plot_model
 from keras.preprocessing.image import ImageDataGenerator
 from keras.callbacks import ModelCheckpoint,ReduceLROnPlateau
+from vgg19 import VGG19
 
 
 #模型的构建
 img_rows, img_cols, img_channel = 400, 400, 3
-base_model = applications.VGG19(weights='imagenet', include_top=False,input_shape=(img_rows, img_cols, img_channel))
+base_model = VGG19(weights='imagenet', include_top=False,input_shape=(img_rows, img_cols, img_channel))
 add_model = Sequential()
 add_model.add(Flatten(input_shape=base_model.output_shape[1:]))
 add_model.add(Dense(1024, activation='relu'))
