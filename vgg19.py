@@ -7,7 +7,6 @@ from __future__ import print_function
 
 import numpy as np
 import warnings
-
 from keras.models import Model
 from keras.layers import Flatten, Dense, Input
 from keras.layers import Conv2D
@@ -23,10 +22,8 @@ from keras.applications.imagenet_utils import preprocess_input
 from keras.applications.imagenet_utils import _obtain_input_shape
 from keras.engine.topology import get_source_inputs
 
-
 WEIGHTS_PATH = 'https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg19_weights_tf_dim_ordering_tf_kernels.h5'
 WEIGHTS_PATH_NO_TOP = 'https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg19_weights_tf_dim_ordering_tf_kernels_notop.h5'
-
 
 def VGG19(include_top=True, weights='imagenet',
           input_tensor=None, input_shape=None,
