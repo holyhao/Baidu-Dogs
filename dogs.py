@@ -51,8 +51,10 @@ train_datagen = ImageDataGenerator(
         width_shift_range=0.1,
         height_shift_range=0.1, 
         horizontal_flip=True)
-
-val_generator = train_datagen.flow_from_directory(
+		
+val_datagen=ImageDataGenerator(rescale=1./255)
+		
+val_generator = val_datagen.flow_from_directory(
         val_data_dir,
         target_size=(img_rows, img_cols),
         batch_size=batch_s,
@@ -70,7 +72,7 @@ train_generator = train_datagen.flow_from_directory(
 
 history = model.fit_generator(
      train_generator,
-     steps_per_epoch=800,
+     steps_per_epoch=train_generator.samples/batch_size,
      epochs=epochs,
 	 validation_data=val_generator,
      validation_steps=batch_s
