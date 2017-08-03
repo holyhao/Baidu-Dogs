@@ -1,3 +1,3 @@
-#TEST
+#Test
 Data for testing.
 

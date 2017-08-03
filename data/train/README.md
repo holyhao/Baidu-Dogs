@@ -1,3 +1,3 @@
-#TEST
+#TRAIN
 Data for trainning.
 
