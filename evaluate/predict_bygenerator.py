@@ -37,5 +37,5 @@ predict_path = 'submission.txt'
 
 with open(predict_path,'a') as fp:
     for i, idx in enumerate(y_max_idx):
-        fp.write(str(label_idxs[idx][0]) + '\t' + test_generator.filenames[i][2:-4] + '\n')
+        fp.write(str(label_idxs[idx][0]) + '\t' + test_generator.filenames[i][6:-4] + '\n')
     fp.close
