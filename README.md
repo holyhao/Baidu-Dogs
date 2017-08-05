@@ -19,7 +19,7 @@
 
 ## Base Model
 - [VGG19](models/vgg19.py) for deep feature extraction,which is provided in keras models.
-- softmax for classification
+- Softmax for classification.
 
 ## Evaluate
 - Predict the classes for unlabeled data one by one refering to [predict_onebyone](evaluate/predict_onebyone.py) and by generator refering to [predict_bygenerator.by](evaluate/predict_bygenerator.py).
