@@ -9,6 +9,7 @@
 - Geforce GTX TITANX 12G
 - Intel® Core™ i7-6700 CPU
 - Memory 16G
+- Operate system Ubuntu 14.04
 
 ## Data
 - Download the images from Baidu Cloud
