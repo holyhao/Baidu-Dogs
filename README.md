@@ -1,4 +1,4 @@
-# Fine-grained Dog Classification competition held by Baidu
+# Fine-grained Dog Classification competition
 - This is a dog classification competition held by Baidu. Further information at http://js.baidu.com/
 
 ## Framework
@@ -24,6 +24,6 @@
 ## Evaluate
 - Predict the classes for unlabeled data one by one refering to [predict_onebyone](evaluate/predict_onebyone.py) and by generator refering to [predict_bygenerator.by](evaluate/predict_bygenerator.py).
 ## to be continued
-> Feel free to contact me if you have some issues or better ideas about anything.
+> Feel free to contact me if you have any issues or better ideas about anything.
 
 > by Holy
