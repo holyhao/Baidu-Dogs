@@ -19,7 +19,8 @@
 - Take 20% of the labeled data for validation. Refer to [divforValidation.py](preprocessing/divforValidation.py).
 
 ## Base Model
-- [VGG19](models/vgg19.py) for deep feature extraction,which is provided in keras models.
+- [VGG19](models/vgg19.py) for deep feature extraction, which is provided in keras models.
+- [InceptionV3](models/InceptionV3) for deep feature extraction, which is provided in keras models.
 - Softmax for classification.
 
 ## Evaluate
